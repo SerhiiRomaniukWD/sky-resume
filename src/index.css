@@ -1,14 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 @import "tailwindcss";
 
 body {
   overscroll-behavior-y: none;
+  color: #212121;
+}
+
+a {
+  cursor: pointer;
 }
 
 @theme {
-  --font-jost: "Jost", sans-serif;
-  --font-manrope: "Manrope", sans-serif;
+  --font-bungee: "Bungee", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+	--font-montserrat: "Montserrat", sans-serif;
 
-  --default-font-family: "Jost";
+  --default-font-family: "Roboto";
 
   --color-primary-white: #fcfcfc;
   --color-primary-black: #212121;
