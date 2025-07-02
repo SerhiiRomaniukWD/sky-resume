@@ -1,9 +1,25 @@
 import React from "react";
 
+import { Header } from "./components/Header";
+import { Portfolio } from "./components/Portfolio";
+import { Skills } from "./components/Skills";
+import { Contacts } from "./components/Contacts";
+import { Intro } from "./components/Intro";
+
 export const App: React.FC = () => {
   return (
     <>
-      <h1>Serhii's resume</h1>
+      <Header />
+
+      <main className="min-h-screen [&>section]:px-20 [&>section]:h-screen">
+        <Intro />
+
+        <Portfolio />
+
+        <Skills />
+
+        <Contacts />
+      </main>
     </>
   );
 };
