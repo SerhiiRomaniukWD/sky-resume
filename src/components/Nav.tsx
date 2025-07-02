@@ -7,7 +7,7 @@ const NAVIGATION_LINKS = [
   { name: "Contacts", href: "#contacts" },
 ];
 
-const ALL_SECTION_IDS = ["top", "portfolio", "skills", "contacts"];
+const ALL_SECTION_IDS = ["intro", "portfolio", "skills", "contacts"];
 
 export const Nav: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>("");
