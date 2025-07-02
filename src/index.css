@@ -9,7 +9,7 @@ body {
   color: #212121;
 }
 
-a {
+a, button {
   cursor: pointer;
 }
 

@@ -28,9 +28,9 @@ export const Nav: React.FC = () => {
   }, []);
 
   return (
-    <nav className="absolute top-0 right-0 p-10">
+    <nav>
       <ul
-        className="flex text-base text-primary-black/70 font-montserrat"
+        className="fixed top-10 right-20 flex text-base text-primary-black/70 font-montserrat z-10"
         style={{ writingMode: "vertical-lr" }}
       >
         {NAVIGATION_LINKS.map((link) => (
@@ -39,7 +39,7 @@ export const Nav: React.FC = () => {
               "min-h-18 transition duration-150 ease-in-out text-center",
               hash === link.href
                 ? "text-primary-black font-semibold"
-                : "hover:scale-y-105 hover:text-primary-black",
+                : "hover:scale-y-101 hover:text-primary-black",
             )}
             key={link.name}
           >

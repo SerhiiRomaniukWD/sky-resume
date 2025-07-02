@@ -101,18 +101,9 @@ export const ReactBaner: React.FC = () => {
           cx={SIZE / 2}
           cy={SIZE / 2}
           r={34}
-          fill="none"
-          stroke="#212121"
-          strokeWidth={12}
-        />
-
-        <circle
-          cx={SIZE / 2}
-          cy={SIZE / 2}
-          r={34}
-          fill="#fff"
-          stroke="currentColor"
-          strokeWidth={8}
+          fill="currentColor"
+          stroke="black"
+          strokeWidth={2}
         />
         <circle cx={dotX} cy={dotY} r={10} fill="#212121" />
         <circle cx={dotX + 2} cy={dotY - 2} r={3} fill="#fff" />
