@@ -1,8 +1,8 @@
 import React from "react";
-import clsx from "clsx";
 
 import { ReactBaner } from "./components/ReactBaner";
 import { Header } from "./components/Header";
+import { PrimaryBtn } from "./components/PrimaryBtn";
 
 export const App: React.FC = () => {
   return (
@@ -21,15 +21,7 @@ export const App: React.FC = () => {
             </div>
 
             <div className="flex justify-end">
-              <button
-                className={clsx(
-                  "text-white bg-primary-black px-6 py-2 rounded-full text-lg font-mediumt",
-                  "hover:bg-white hover:text-primary-black transition ease-in-out hover:outline-[1px]",
-                )}
-                type="button"
-              >
-                Contact me
-              </button>
+              <PrimaryBtn text="Contact me" onClick={() => {}} />
             </div>
           </div>
 
