@@ -2,6 +2,7 @@ import React from "react";
 
 import { Nav } from "./components/Nav";
 import { Logo } from "./components/Logo";
+import { ReactBaner } from "./components/ReactBaner";
 
 export const App: React.FC = () => {
   return (
@@ -10,6 +11,8 @@ export const App: React.FC = () => {
         <Logo />
 
         <Nav />
+
+				<ReactBaner />
       </div>
     </div>
   );
