@@ -4,22 +4,28 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overscroll-behavior-y: none;
   color: #212121;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
 @theme {
   --font-bungee: "Bungee", sans-serif;
   --font-roboto: "Roboto", sans-serif;
-	--font-montserrat: "Montserrat", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
 
   --default-font-family: "Roboto";
 
   --color-primary-white: #fcfcfc;
   --color-primary-black: #212121;
+  --color-primary-blue-light: #b8d7f2;
 }

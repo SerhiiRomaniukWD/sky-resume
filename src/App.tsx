@@ -6,11 +6,11 @@ import { PrimaryBtn } from "./components/PrimaryBtn";
 
 export const App: React.FC = () => {
   return (
-    <div className="flex items-center justify-center mx-20 h-screen">
+    <div>
       <Header />
 
-      <main className="relative h-[80vh] w-full bg-white">
-        <section className="flex items-center justify-center gap-50 pt-30 pr-6">
+      <main className="min-h-screen [&>section]:px-20 [&>section]:h-screen">
+        <section id="top" className="flex items-center justify-center gap-50">
           <div className="font-montserrat max-w-[31rem]">
             <div className="mb-24">
               <p className="text-xl mb-3">Hi, I'm</p>
@@ -33,6 +33,12 @@ export const App: React.FC = () => {
 
           <ReactBaner />
         </section>
+
+        <section className="" id="portfolio"></section>
+
+        <section className="bg-primary-blue-light/50" id="skills"></section>
+
+        <section className="" id="contacts"></section>
       </main>
     </div>
   );
