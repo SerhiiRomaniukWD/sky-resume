@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import clsx from "clsx";
 
 import { useDebounce } from "../hooks/useDebounce";
+import { SlotImage } from "./SlotImage";
 
 interface PortfolioItem {
   name: string;
@@ -26,7 +27,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
     name: "Third project",
     description:
       "I'm passionate about crafting experiences that are engaging, accessible, and user-centric.",
-    images: ["epn-0", "epn-1", "epn-2"],
+    images: ["heritage-0", "heritage-1", "heritage-2"],
   },
 ];
 
@@ -66,33 +67,11 @@ export const Portfolio: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-10 pr-10">
-        <img
-          className="rounded-[10px] border-[2px] border-primary-black opacity-80"
-          src={
-            debouncedItem
-              ? `/images/${debouncedItem.images[0]}.webp`
-              : "/images/epn-0.webp"
-          }
-          alt="website image"
+        <SlotImage newImg={debouncedItem ? debouncedItem.images[0] : "epn-0"} />
+        <SlotImage
+          newImg={debouncedItem ? debouncedItem.images[1] : "gtrf-0"}
         />
-        <img
-          className="rounded-[10px] border-[2px] border-primary-black opacity-80"
-          src={
-            debouncedItem
-              ? `/images/${debouncedItem.images[1]}.webp`
-              : "/images/gtrf-0.webp"
-          }
-          alt="website image"
-        />
-        <img
-          className="rounded-[10px] border-[2px] border-primary-black opacity-80"
-          src={
-            debouncedItem
-              ? `/images/${debouncedItem.images[2]}.webp`
-              : "/images/epn-2.webp"
-          }
-          alt="website image"
-        />
+        <SlotImage newImg={debouncedItem ? debouncedItem.images[2] : "heritage-0"} />
       </div>
     </section>
   );
