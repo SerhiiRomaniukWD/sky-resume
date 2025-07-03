@@ -32,7 +32,7 @@ export const SlotImage: React.FC<SlotImageProps> = ({ newImg }) => {
 
       <div
         className={clsx(
-          "absolute top-0 inset-0 w-full bg-[#b8d7f2] duration-200",
+          "absolute top-0 inset-0 w-full bg-primary-black duration-200",
           "origin-bottom",
           blinking ? "h-1/2 border-b border-primary-black" : "h-0",
         )}
@@ -40,7 +40,7 @@ export const SlotImage: React.FC<SlotImageProps> = ({ newImg }) => {
 
       <div
         className={clsx(
-          "absolute bottom-0 left-0 w-full bg-[#b8d7f2] duration-200",
+          "absolute bottom-0 left-0 w-full bg-primary-black duration-200",
           "origin-top",
           blinking ? "h-1/2 border-t border-primary-black" : "h-0",
         )}
