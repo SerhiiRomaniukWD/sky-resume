@@ -99,7 +99,7 @@ export const Lamp: React.FC = () => {
 
         <text
           x="58%"
-          y="58%"
+          y="52%"
           transform="rotate(26)"
           dominantBaseline="middle"
           textAnchor="middle"
