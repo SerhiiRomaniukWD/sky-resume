@@ -5,7 +5,10 @@ import { ReactBaner } from "./ReactBaner";
 
 export const Intro: React.FC = () => {
   return (
-    <section id="intro" className="flex items-center justify-center gap-50">
+    <section
+      id="intro"
+      className="flex items-center justify-center gap-30 2xl:gap-50 !pr-[7rem]"
+    >
       <div className="font-montserrat max-w-[31rem]">
         <div className="mb-24">
           <p className="text-xl mb-3">Hi, I'm</p>
