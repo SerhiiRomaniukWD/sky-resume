@@ -17,7 +17,7 @@ export const PrimaryBtn: React.FC<Props> = ({
   return (
     <button
       className={clsx(
-        "text-white bg-primary-black px-6 py-2 rounded-full text-lg font-mediumt",
+        "text-white bg-primary-black px-6 py-2 rounded-full text-lg font-montserrat",
         "hover:bg-white hover:text-primary-black transition ease-in-out hover:outline-[1px] duration-150",
 				"active:scale-99",
         className,

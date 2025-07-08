@@ -95,33 +95,43 @@ export const Skills: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <ul className="flex flex-col items-center gap-4 px-20 font-montserrat text-2xl text-primary-black">
-          <li className="flex items-center gap-2">
+      <div className="flex justify-center gap-60">
+        <ul
+          className={clsx(
+            "flex flex-col gap-4 font-montserrat text-2xl text-primary-black/60",
+            "[&>li]:flex [&>li]:gap-2 [&>li]:justify-start [&>li]:items-center",
+          )}
+        >
+          <li>
             <JSIcon /> JavaScript
           </li>
-          <li className="flex items-center gap-2">
+          <li>
             <TSIcon /> TypeScript
           </li>
-          <li className="flex items-center gap-2">
+          <li>
             <ReactIcon /> React
           </li>
-          <li className="flex items-center gap-2">
+          <li>
             <TailwindIcon /> Tailwindcss
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center gap-4 px-20 font-montserrat text-2xl text-primary-black">
-          <li className="flex items-center gap-2">
+        <ul
+          className={clsx(
+            "flex flex-col gap-4 font-montserrat text-2xl text-primary-black/60",
+            "[&>li]:flex [&>li]:gap-2 [&>li]:justify-start [&>li]:items-center",
+          )}
+        >
+          <li>
             <ReduxIcon /> Redux
           </li>
-          <li className="flex items-center gap-2">
+          <li>
             <ZustandIcon /> Zustand
           </li>
-          <li className="flex items-center gap-2">
+          <li>
             <GitIcon /> Git
           </li>
-          <li className="flex items-center gap-2">
+          <li>
             <ViteIcon /> Vite
           </li>
         </ul>

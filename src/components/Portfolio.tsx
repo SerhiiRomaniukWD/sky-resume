@@ -62,7 +62,7 @@ export const Portfolio: React.FC = () => {
         <div>
           <p
             className={clsx(
-              "text-right text-lg text-primary-black/60 font-montserrat max-w-[30rem] pr-20 2xl:pr-30 duration-300 scale-0",
+              "text-right text-base text-primary-black/60 font-montserrat max-w-[30rem] pr-20 2xl:pr-30 duration-300 scale-0",
               activeItem && "scale-100",
             )}
           >
