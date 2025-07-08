@@ -5,7 +5,7 @@ import { PrimaryBtn } from "./PrimaryBtn";
 
 export const Contacts: React.FC = () => {
   return (
-    <section className="flex items-center p-40 !pr-28" id="contacts">
+    <section className="flex items-center p-40" id="contacts">
       <div className="flex-1">
         <h2 className="text-5xl font-bungee mb-10">Hey!</h2>
 
