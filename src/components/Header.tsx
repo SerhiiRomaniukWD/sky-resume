@@ -5,7 +5,7 @@ import { Nav } from "./Nav";
 
 export const Header: React.FC = () => {
   return (
-    <header>
+    <header className="hidden lg:display">
       <Logo />
 
       <Nav />

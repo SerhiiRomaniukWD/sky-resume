@@ -1,11 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
 
-const SIZE = 420;
-const RADIUS = 10;
+import { useWindowWidth } from "../hooks/useWindowWidth";
 
 export const ReactBaner: React.FC = () => {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const [angle, setAngle] = useState<number>(0);
+  const width = useWindowWidth();
+
+  const SIZE = width < 768 ? 280 : 420;
+  const RADIUS = 10;
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
