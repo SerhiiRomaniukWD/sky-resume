@@ -1,9 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 
 import { Lamp } from "./Lamp";
 import { PrimaryBtn } from "./PrimaryBtn";
 
+type FormData = {
+  email: string;
+  name: string;
+  message: string;
+};
+
+const Status = {
+  OK: "Message sent successfully!",
+  FAIL: "Failed to send message. Please try again.",
+  ERROR: "An error occurred. Please try again later.",
+  HOLD: "Hold on!",
+  PENDING: "Message sending.",
+};
+
 export const Contacts: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    email: "",
+    name: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(Status.HOLD);
+
+  const handleClickRefresh = () => setStatus(Status.HOLD);
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setStatus(Status.PENDING);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mvggypla", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus(Status.OK);
+        setFormData({ email: "", name: "", message: "" });
+      } else {
+        setStatus(Status.FAIL);
+      }
+    } catch {
+      setStatus(Status.ERROR);
+    }
+  };
+
   return (
     <section className="flex items-center p-40" id="contacts">
       <div className="flex-1">
@@ -21,24 +76,34 @@ export const Contacts: React.FC = () => {
 
         <form
           className="flex flex-col gap-6 mt-12 font-montserrat max-w-[40rem]"
+          onSubmit={handleSubmit}
           action="/"
         >
           <input
-            className="border-b-[2px] border-primary-black w-full py-2"
+            className="border-b-[2px] border-primary-black w-full py-2 outline-none"
             placeholder="Name"
+            name="name"
+            onChange={handleChange}
             type="text"
+            required
           />
 
           <input
-            className="border-b-[2px] border-primary-black w-full py-2"
+            className="border-b-[2px] border-primary-black w-full py-2 outline-none"
             placeholder="Email"
+            name="email"
+            onChange={handleChange}
             type="email"
             required
           />
 
           <textarea
-            className="border-b-[2px] border-primary-black w-full py-2 mb-10 max-h-[15rem] min-h-[3rem] h-fit"
+            className="border-b-[2px] border-primary-black w-full py-2 mb-10 max-h-[15rem] min-h-[3rem] h-fit outline-none"
             placeholder="Message"
+            name="message"
+            onChange={handleChange}
+            value={formData.message}
+            required
             rows={4}
           ></textarea>
 
