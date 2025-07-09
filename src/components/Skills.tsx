@@ -133,7 +133,7 @@ export const Skills: React.FC = () => {
       <div
         className={clsx(
           "flex flex-col translate-x-[calc(50%-19rem)] duration-500",
-          isScrolledTo && "!translate-x-[calc(100%-36rem)]",
+          isScrolledTo && "translate-x-[calc(50%-36rem)]",
         )}
       >
         <p
@@ -142,10 +142,10 @@ export const Skills: React.FC = () => {
             isScrolledTo && "text-left pl-20",
           )}
         >
-          Over the past 2 years, I've worked in the web industry, in particular,
-          I have been involved in front-end development and a little bit of
-          back-end. I am satisfied with my experience and continue to work on
-          getting better.
+          I've progressed from a complete beginner to taking full ownership of
+          web application development. This encompasses everything from
+          designing and building RESTful APIs to maintaining ongoing projects
+          and creating browser extensions.
         </p>
       </div>
     </section>
