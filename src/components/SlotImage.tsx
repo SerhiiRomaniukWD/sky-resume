@@ -16,7 +16,7 @@ export const SlotImage: React.FC<SlotImageProps> = ({ newImg }) => {
       const timeout = setTimeout(() => {
         setCurrentImg(newImg);
         setBlinking(false);
-      }, 500);
+      }, 300);
 
       return () => clearTimeout(timeout);
     }
