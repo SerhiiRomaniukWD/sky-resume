@@ -95,11 +95,11 @@ export const Skills: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-60">
+      <div className="flex justify-center">
         <ul
           className={clsx(
-            "flex flex-col gap-4 font-montserrat text-2xl text-primary-black/60",
-            "[&>li]:flex [&>li]:gap-2 [&>li]:justify-start [&>li]:items-center",
+            "grid grid-cols-4 gap-6 font-montserrat text-2xl text-primary-black/60",
+            "[&>li]:flex [&>li]:gap-2 [&>li]:justify-center [&>li]:items-center",
           )}
         >
           <li>
@@ -114,14 +114,7 @@ export const Skills: React.FC = () => {
           <li>
             <TailwindIcon /> Tailwindcss
           </li>
-        </ul>
 
-        <ul
-          className={clsx(
-            "flex flex-col gap-4 font-montserrat text-2xl text-primary-black/60",
-            "[&>li]:flex [&>li]:gap-2 [&>li]:justify-start [&>li]:items-center",
-          )}
-        >
           <li>
             <ReduxIcon /> Redux
           </li>
@@ -135,6 +128,25 @@ export const Skills: React.FC = () => {
             <ViteIcon /> Vite
           </li>
         </ul>
+      </div>
+
+      <div
+        className={clsx(
+          "flex flex-col translate-x-[calc(50%-19rem)] duration-500",
+          isScrolledTo && "!translate-x-[calc(100%-36rem)]",
+        )}
+      >
+        <p
+          className={clsx(
+            "w-[38rem] font-montserrat text-primary-black/60 text-center pl-0",
+            isScrolledTo && "text-left pl-20",
+          )}
+        >
+          Over the past 2 years, I've worked in the web industry, in particular,
+          I have been involved in front-end development and a little bit of
+          back-end. I am satisfied with my experience and continue to work on
+          getting better.
+        </p>
       </div>
     </section>
   );
