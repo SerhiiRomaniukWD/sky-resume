@@ -80,15 +80,16 @@ export const Contacts: React.FC = () => {
           action="/"
         >
           <input
-            className="border-b-[2px] border-primary-black w-full py-2"
+            className="border-b-[2px] border-primary-black w-full py-2 outline-none"
             placeholder="Name"
             name="name"
             onChange={handleChange}
             type="text"
+            required
           />
 
           <input
-            className="border-b-[2px] border-primary-black w-full py-2"
+            className="border-b-[2px] border-primary-black w-full py-2 outline-none"
             placeholder="Email"
             name="email"
             onChange={handleChange}
@@ -97,11 +98,12 @@ export const Contacts: React.FC = () => {
           />
 
           <textarea
-            className="border-b-[2px] border-primary-black w-full py-2 mb-10 max-h-[15rem] min-h-[3rem] h-fit"
+            className="border-b-[2px] border-primary-black w-full py-2 mb-10 max-h-[15rem] min-h-[3rem] h-fit outline-none"
             placeholder="Message"
             name="message"
             onChange={handleChange}
             value={formData.message}
+            required
             rows={4}
           ></textarea>
 
