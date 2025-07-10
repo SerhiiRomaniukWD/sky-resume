@@ -74,7 +74,7 @@ export const Skills: React.FC = () => {
         >
           <p
             className={clsx(
-              "w-[38rem] mb-8 font-montserrat text-primary-black/60 text-center pr-0",
+              "w-[18rem] mb-8 font-montserrat text-primary-black/60 text-center pr-0",
               isScrolledTo && "text-right pr-20",
             )}
           >
@@ -83,7 +83,7 @@ export const Skills: React.FC = () => {
 
           <p
             className={clsx(
-              "w-[38rem] font-montserrat text-primary-black/60 text-center pr-0",
+              "w-[18rem] font-montserrat text-primary-black/60 text-center pr-0",
               isScrolledTo && "text-right pr-20",
             )}
           >
@@ -98,7 +98,7 @@ export const Skills: React.FC = () => {
       <div className="flex justify-center">
         <ul
           className={clsx(
-            "grid grid-cols-4 gap-6 font-montserrat text-2xl text-primary-black/60",
+            "grid grid-cols-1 lg:grid-cols-4 gap-6 font-montserrat text-2xl text-primary-black/60",
             "[&>li]:flex [&>li]:gap-2 [&>li]:justify-center [&>li]:items-center",
           )}
         >
@@ -138,7 +138,7 @@ export const Skills: React.FC = () => {
       >
         <p
           className={clsx(
-            "w-[38rem] font-montserrat text-primary-black/60 text-center pl-0",
+            "w-[18rem] font-montserrat text-primary-black/60 text-center pl-0",
             isScrolledTo && "text-left",
           )}
         >

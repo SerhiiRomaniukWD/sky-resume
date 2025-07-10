@@ -116,7 +116,7 @@ export const Contacts: React.FC = () => {
           </div>
         </form>
       </div>
-      <div className="flex-1">
+      <div className="hidden lg:block flex-1">
         <Lamp />
       </div>
     </section>

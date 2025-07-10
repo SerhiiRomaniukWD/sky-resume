@@ -7,7 +7,7 @@ export const Intro: React.FC = () => {
   return (
     <section
       id="intro"
-      className="flex flex-col lg:flex-row items-center justify-center gap-30 2xl:gap-50 lg:pr-[7rem] bg-[#b8d7f2]"
+      className="flex flex-col lg:flex-row items-center justify-center gap-30 2xl:gap-50 lg:pr-[7rem] bg-[#b8d7f2] lg:bg-white"
     >
       <div className="font-montserrat max-w-[31rem] rounded-xl p-2 py-20">
         <div className="mb-24">
