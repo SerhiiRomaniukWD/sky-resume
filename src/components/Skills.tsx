@@ -139,7 +139,7 @@ export const Skills: React.FC = () => {
         >
           <p
             className={clsx(
-              "lg:w-[38rem] font-montserrat text-primary-black/60 text-center pl-0",
+              "lg:w-[38rem] font-montserrat text-primary-black/60 lg:text-center pl-0",
               isScrolledTo && "text-left",
             )}
           >
