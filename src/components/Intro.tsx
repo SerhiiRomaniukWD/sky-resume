@@ -12,7 +12,7 @@ export const Intro: React.FC = () => {
       <div className="font-montserrat max-w-[31rem] rounded-xl p-2 py-20">
         <div className="mb-24">
           <p className="text-xl mb-3">Hi, I'm</p>
-          <p className="text-5xl font-bungee">Serhii Romaniuk</p>
+          <p className="text-5xl font-bungee lg:text-nowrap">Serhii Romaniuk</p>
           <p className="text-base text-primary-black/80 w-full text-right">
             front-end developer
           </p>
