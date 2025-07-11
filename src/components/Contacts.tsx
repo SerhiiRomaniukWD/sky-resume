@@ -122,6 +122,7 @@ export const Contacts: React.FC = () => {
               text="Send a message"
               onClick={() => (window.location.hash = "contacts")}
               type="submit"
+              className="border border-white lg:border-none"
             />
           </div>
         </form>
