@@ -21,7 +21,7 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     name: "Second project",
     description:
-      "A large team project in which I was responsible for creating and adapting all interfaces, adding responsive layout, implementing third-party technologies, setting up APIs, and optimizing performance. I was also involved in API development to bring the project to a working version.",
+      "A large team project in which I was responsible for creating and adapting all interfaces, adding responsive layout, implementing third-party technologies, setting up APIs, and optimizing performance. I also contributed to backend development by designing and implementing APIs that supported core application functionality.",
     images: ["gtrf-0", "gtrf-1", "gtrf-2"],
   },
   {
