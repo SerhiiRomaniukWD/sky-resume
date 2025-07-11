@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 import clsx from "clsx";
 
+import RefreshIcon from "../assets/icons/refresh.svg";
+
 import { Lamp } from "./Lamp";
 import { PrimaryBtn } from "./PrimaryBtn";
 
@@ -25,7 +27,7 @@ export const Contacts: React.FC = () => {
     name: "",
     message: "",
   });
-  const [status, setStatus] = useState(Status.HOLD);
+  const [status, setStatus] = useState(Status.ERROR);
 
   const handleClickRefresh = () => setStatus(Status.HOLD);
   const handleChange = (
@@ -80,8 +82,24 @@ export const Contacts: React.FC = () => {
           </a>
         </p>
 
+        {status === Status.ERROR && (
+          <div className="mt-20 flex gap-20 items-center">
+            <p className="font-montserrat font-semibold uppercase text-white lg:text-primary-black">
+              Something went wrong
+            </p>
+
+            <button
+              type="button"
+              className="font-montserrat text-white lg:text-primary-black p-1 border-[2px] border-white lg:border-primary-black rounded-sm"
+            >
+              <RefreshIcon />
+            </button>
+          </div>
+        )}
+
         <form
           className={clsx(
+            status !== Status.HOLD && "hidden",
             "flex flex-col gap-6 mt-12 font-montserrat max-w-[40rem]",
             "[&>input,textarea]:border-white lg:[&>input,textarea]:border-primary-black",
             "[&>input,textarea]:text-white lg:[&>input,textarea]:text-primary-black",
