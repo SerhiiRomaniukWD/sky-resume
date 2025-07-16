@@ -11,6 +11,7 @@ html {
 
 body {
   overscroll-behavior-y: none;
+  overflow-x: hidden !important;
   color: #212121;
 }
 
