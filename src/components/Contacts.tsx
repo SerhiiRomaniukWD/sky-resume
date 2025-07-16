@@ -78,7 +78,7 @@ export const Contacts: React.FC = () => {
             Write to me here or send me an email <span className="mr-1">—</span>
             <a
               className="font-medium font-montserrat pb-[2px] border-b-[2px] border-[#7fb2e3] text-[#7fb2e3]"
-              href=""
+              href="mailto:serhii.romaniuk.dev@gmail.com"
             >
               serhii.romaniuk.dev@gmail.com
             </a>

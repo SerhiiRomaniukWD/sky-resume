@@ -15,19 +15,19 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     name: "First project",
     description:
-      "Developed an information platform from scratch as a solo developer. Translated business needs into a functional web app, implemented responsive design for all screen sizes, added custom animations, and optimized performance.",
+      "Designed and created from scratch in collaboration with a UI/UX design team. React-based infrastructure with custom architecture, ensuring fast and optimal performance.",
     images: ["epn-0", "epn-1", "epn-2"],
   },
   {
     name: "Second project",
     description:
-      "A large team project in which I was responsible for creating and adapting all interfaces, adding responsive layout, implementing third-party technologies, setting up APIs, and optimizing performance. I also contributed to backend development by designing and implementing APIs that supported core application functionality.",
+      "Worked in development team, enhancing code reusability and efficency, impoving website accessibility and user experience, API integration. Also contributed to the backend for fixing bugs and implementing new features.",
     images: ["gtrf-0", "gtrf-1", "gtrf-2"],
   },
   {
     name: "Third project",
     description:
-      "Solo development of a cafe-shop webiste, build from scratch based on business requirements. Implemented responsive layout, smoth UI animations, and performance optimizations. ",
+      "Designed and implemented a responsive and user-friendly interface, ensuring optimization and interaction. Collaborated with the team to optimize performance and enhance user experience.",
     images: ["heritage-0", "heritage-1", "heritage-2"],
   },
 ];

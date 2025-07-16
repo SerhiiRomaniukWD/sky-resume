@@ -79,7 +79,7 @@ export const Skills: React.FC = () => {
                 isScrolledTo && "text-right lg:pr-20",
               )}
             >
-              I'm Serhii, a Software Developer working remotly in sunny Italy.
+              I'm Serhii, a Software Developer based in Italy.
             </p>
 
             <p
@@ -88,10 +88,10 @@ export const Skills: React.FC = () => {
                 isScrolledTo && "text-right lg:pr-20",
               )}
             >
-              Over the past 2 years, I've worked in the web industry, in
-              particular, I have been involved in front-end development and a
-              little bit of back-end. I am satisfied with my experience and
-              continue to work on getting better.
+              Over the past 2 years, I've worked in the web industry, focusing
+              on React-based applications. Proficient with JavaScript,
+              TypeScript, Vite, Git and various state management libraries.
+              Looking forward to adding value through my passion and expertise.
             </p>
           </div>
         </div>
@@ -143,10 +143,9 @@ export const Skills: React.FC = () => {
               isScrolledTo && "lg:text-left",
             )}
           >
-            I've progressed from a complete beginner to taking full ownership of
-            web application development. This encompasses everything from
-            designing and building RESTful APIs to maintaining ongoing projects
-            and creating browser extensions.
+            Have made significant contributions in creating high-quality
+            applications with excellent uptime and optimized performance.
+            Excited about implementing robust and innovative solutions.
           </p>
         </div>
       </div>
