@@ -145,8 +145,7 @@ export const Skills: React.FC = () => {
           >
             Have made significant contributions in creating high-quality
             applications with excellent uptime and optimized performance.
-            Excited about implementing robust solutions and enhancing user
-            experiences.
+            Excited about implementing robust and innovative solutions.
           </p>
         </div>
       </div>
