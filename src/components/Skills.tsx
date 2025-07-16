@@ -34,11 +34,14 @@ export const Skills: React.FC = () => {
   }, []);
 
   return (
-    <section id="skills" className="flex justify-center !px-0 lg:!px-20">
+    <section
+      id="skills"
+      className="flex justify-center !px-0 lg:!px-20 !min-h-[50rem]"
+    >
       <div
         ref={sectionRef}
         className={clsx(
-          "area transition-all duration-500 bg-[#b8d7f2]",
+          "area transition-all duration-500 h-full !min-h-[50rem]",
           isScrolledTo ? "rounded-none" : "lg:rounded-[20rem]",
         )}
       >

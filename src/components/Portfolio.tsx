@@ -42,7 +42,7 @@ export const Portfolio: React.FC = () => {
   };
 
   return (
-    <section className="lg:pt-50" id="portfolio">
+    <section className="lg:pt-50 min-h-[60rem]" id="portfolio">
       <div className="flex lg:hidden pt-10 pb-30 h-full">
         <CustomCarousel items={PORTFOLIO_ITEMS} />
       </div>

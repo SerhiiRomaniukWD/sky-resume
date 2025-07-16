@@ -65,7 +65,7 @@ export const Contacts: React.FC = () => {
 
   return (
     <section
-      className="flex items-center lg:p-40 bg-primary-black lg:bg-white"
+      className="flex items-center lg:p-40 bg-primary-black lg:bg-white min-h-[54rem]"
       id="contacts"
     >
       <div className="flex-1 flex flex-col h-full pt-40 lg:pt-30">
