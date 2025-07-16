@@ -11,7 +11,7 @@ export const App: React.FC = () => {
     <>
       <Header />
 
-      <main className="min-h-screen [&>section]:px-2 lg:[&>section]:px-20 [&>section]:h-screen">
+      <main className="min-h-screen [&>section]:px-2 lg:[&>section]:px-20 [&>section]:h-screen [&>section]:min-h-[68rem]">
         <Intro />
 
         <Portfolio />

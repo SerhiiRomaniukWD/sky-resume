@@ -80,6 +80,7 @@ button {
   height: 100%;
   position: absolute;
   z-index: -1;
+  min-height: 68rem;
 }
 
 .circles {
