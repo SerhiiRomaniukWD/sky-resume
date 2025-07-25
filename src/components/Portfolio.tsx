@@ -15,19 +15,19 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     name: "First project",
     description:
-      "Designed and created from scratch in collaboration with a UI/UX design team. React-based infrastructure with custom architecture, ensuring fast and optimal performance.",
+      "Designed and developed from scratch in collaboration with a UI/UX design team. Built on a custom React-based architecture, ensuring fast and optimal performance.",
     images: ["epn-0", "epn-1", "epn-2"],
   },
   {
     name: "Second project",
     description:
-      "Worked in development team, enhancing code reusability and efficency, impoving website accessibility and user experience, API integration. Also contributed to the backend for fixing bugs and implementing new features.",
+      "Worked in a development team, enhancing code reusability and efficiency, improving website accessibility and user experience, and integrating APIs. Also contributed to the backend by fixing bugs and implementing new features.",
     images: ["gtrf-0", "gtrf-1", "gtrf-2"],
   },
   {
     name: "Third project",
     description:
-      "Designed and implemented a responsive and user-friendly interface, ensuring optimization and interaction. Collaborated with the team to optimize performance and enhance user experience.",
+      "Designed and implemented a responsive, user-friendly interface, ensuring optimization and smooth interaction. Collaborated with the team to optimize performance and enhance the user experience.",
     images: ["heritage-0", "heritage-1", "heritage-2"],
   },
 ];
@@ -42,7 +42,7 @@ export const Portfolio: React.FC = () => {
   };
 
   return (
-    <section className="lg:pt-50" id="portfolio">
+    <section className="lg:pt-50 min-h-[60rem]" id="portfolio">
       <div className="flex lg:hidden pt-10 pb-30 h-full">
         <CustomCarousel items={PORTFOLIO_ITEMS} />
       </div>

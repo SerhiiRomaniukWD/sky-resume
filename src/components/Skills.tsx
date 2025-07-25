@@ -34,11 +34,14 @@ export const Skills: React.FC = () => {
   }, []);
 
   return (
-    <section id="skills" className="flex justify-center !px-0 lg:!px-20">
+    <section
+      id="skills"
+      className="flex justify-center !px-0 lg:!px-20 !min-h-[50rem]"
+    >
       <div
         ref={sectionRef}
         className={clsx(
-          "area transition-all duration-500 bg-[#b8d7f2]",
+          "area transition-all duration-500 h-full !min-h-[50rem]",
           isScrolledTo ? "rounded-none" : "lg:rounded-[20rem]",
         )}
       >
@@ -88,10 +91,10 @@ export const Skills: React.FC = () => {
                 isScrolledTo && "text-right lg:pr-20",
               )}
             >
-              Over the past 2 years, I've worked in the web industry, focusing
-              on React-based applications. Proficient with JavaScript,
-              TypeScript, Vite, Git and various state management libraries.
-              Looking forward to adding value through my passion and expertise.
+              Over the past two years, I've worked in the web industry, focusing
+              on React-based applications. Proficient in JavaScript, TypeScript,
+              Vite, Git, and various state management libraries. Looking forward
+              to adding value through my passion and expertise.
             </p>
           </div>
         </div>
@@ -143,9 +146,9 @@ export const Skills: React.FC = () => {
               isScrolledTo && "lg:text-left",
             )}
           >
-            Have made significant contributions in creating high-quality
-            applications with excellent uptime and optimized performance.
-            Excited about implementing robust and innovative solutions.
+            Made significant contributions to creating high-quality applications
+            with excellent uptime and optimized performance. Excited about
+            implementing robust and innovative solutions.
           </p>
         </div>
       </div>

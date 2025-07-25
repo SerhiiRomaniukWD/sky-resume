@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import clsx from "clsx";
 
 export const Lamp: React.FC = () => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(true);
 
   const handleClickLamp = () => setIsClicked((prevState) => !prevState);
 

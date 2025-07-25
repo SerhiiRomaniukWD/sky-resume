@@ -20,7 +20,7 @@ export const Intro: React.FC = () => {
 
         <p className="text-sm text-center lg:text-right text-primary-black/60 mb-30 lg:mb-10">
           I'm passionate about crafting experiences that are engaging,
-          accessible, and user-centric. I have two years of experience in
+          accessible, and user-centric. I have two years of experience
           developing web applications of varying complexity.
         </p>
 
