@@ -26,7 +26,7 @@ export const SlotImage: React.FC<SlotImageProps> = ({ newImg }) => {
     <div className="relative w-full xl:h-[19rem] 2xl:h-[22rem] overflow-hidden border-[2px] border-primary-black rounded-lg opacity-90">
       <img
         src={`/images/${currentImg}.webp`}
-        alt=""
+        alt="there should be an image here"
         className="w-full h-full object-cover"
       />
 
