@@ -16,19 +16,19 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
     name: "First project",
     description:
       "Designed and developed from scratch in collaboration with a UI/UX design team. Built on a custom React-based architecture, ensuring fast and optimal performance.",
-    images: ["epn-0", "epn-1", "epn-2"],
+    images: [],
   },
   {
     name: "Second project",
     description:
       "Worked in a development team, enhancing code reusability and efficiency, improving website accessibility and user experience, and integrating APIs. Also contributed to the backend by fixing bugs and implementing new features.",
-    images: ["gtrf-0", "gtrf-1", "gtrf-2"],
+    images: [],
   },
   {
     name: "Third project",
     description:
       "Designed and implemented a responsive, user-friendly interface, ensuring optimization and smooth interaction. Collaborated with the team to optimize performance and enhance the user experience.",
-    images: ["heritage-0", "heritage-1", "heritage-2"],
+    images: [],
   },
 ];
 
